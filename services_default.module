@@ -1,0 +1,15 @@
+<?php
+
+/**
+ * @file
+ */
+
+/**
+ * Report to CTools that we use hook_services_api instead of
+ * hook_ctools_plugin_api().
+ */
+if (!function_exists('services_ctools_plugin_api_hook_name')) {
+  function services_ctools_plugin_api_hook_name() {
+    return 'services_api';
+  }
+}

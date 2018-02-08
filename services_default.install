@@ -1,0 +1,15 @@
+<?php
+
+/**
+ * @file
+ * Contains installation functions for the services_default module.
+ */
+
+/**
+ * Implements hook_schema_alter().
+ */
+function services_default_schema_alter(&$schema) {
+  if (!empty($schema['services_endpoint'])) {
+    $schema['services_endpoint']['export']['default hook'] = 'default_services';
+  }
+}

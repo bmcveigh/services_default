@@ -1,0 +1,7 @@
+name = Services Default
+description = Allow services endpoints with the ability to export services via code.
+core = 7.x
+package = Services
+
+dependencies[] = ctools
+dependencies[] = services
